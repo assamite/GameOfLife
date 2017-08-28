@@ -217,7 +217,6 @@ class GOLCanvasCells(object):
                              borderwidth=0,
                              highlightthickness=0)
         self.canvas.grid(sticky=N+E+W+S, padx=5, pady=5)
-        pprint.pprint(self.canvas.configure())
         self.cells = [[None for _ in range(self.h)] for _ in range(self.w)]
         self.canvas.bind("<Button-1>", self.toggle_cell)
         self.draw_lines()
